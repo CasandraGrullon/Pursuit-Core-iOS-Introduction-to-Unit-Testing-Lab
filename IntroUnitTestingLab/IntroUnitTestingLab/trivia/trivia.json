@@ -1,0 +1,119 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Entertainment%3A%20Music",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which%20band%20had%20hits%20in%201972%20with%20the%20songs%20%22Baby%20I%27m%20A%20Want%20You%22%2C%20%22Everything%20I%20Own%22%20and%20%22The%20Guitar%20Man%22",
+            "correct_answer": "Bread",
+            "incorrect_answers": [
+                "America",
+                "Chicago",
+                "Smokie"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Music",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "What%20was%20the%20last%20Aphex%20Twin%20album%20released%20before%20his%20decade-long%20hiatus%3F",
+            "correct_answer": "Drukqs",
+            "incorrect_answers": [
+                "Windowlicker",
+                "Syro",
+                "Collected%20Ambient%20Works%2085-92"
+            ]
+        },
+        {
+            "category": "Geography",
+            "type": "boolean",
+            "difficulty": "medium",
+            "question": "There%20are%20no%20roads%20in%2Fout%20of%20Juneau%2C%20Alaska.",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "Which%20of%20these%20characters%20in%20%22Undertale%22%20can%20the%20player%20NOT%20go%20on%20a%20date%20with%3F",
+            "correct_answer": "Toriel",
+            "incorrect_answers": [
+                "Papyrus",
+                "Undyne",
+                "Alphys"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In%20the%20Portal%20series%2C%20Aperture%20Science%20was%20founded%20under%20what%20name%20in%20the%20early%201940s%3F",
+            "correct_answer": "Aperture%20Fixtures",
+            "incorrect_answers": [
+                "Aperture%20Lavatories",
+                "Aperture%20Science%20Innovators",
+                "Wheatley%20Laboratories"
+            ]
+        },
+        {
+            "category": "Celebrities",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "How%20tall%20is%20Tom%20Cruise%3F",
+            "correct_answer": "5%E2%80%B2%207%E2%80%B3",
+            "incorrect_answers": [
+                "5%E2%80%B2%209%E2%80%B3",
+                "5%E2%80%B2%204%E2%80%B3",
+                "5%E2%80%B2%205%E2%80%B3"
+            ]
+        },
+        {
+            "category": "History",
+            "type": "boolean",
+            "difficulty": "hard",
+            "question": "The%20Battle%20of%20Trafalgar%20took%20place%20on%20October%2023rd%2C%201805",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Who%20is%20the%20English%20voice%20actor%20for%20Sora%20from%20the%20Kingdom%20Hearts%20series%3F",
+            "correct_answer": "Haley%20Joel%20Osment",
+            "incorrect_answers": [
+                "K%C5%8Dki%20Uchiyama",
+                "Jesse%20McCartney",
+                "Miyu%20Irino"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Japanese%20Anime%20%26%20Manga",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In%20the%20%22Re%3AZero%22%20manga%20series%2C%20which%20of%20the%20following%20Sin%20Archbishops%20eats%20Rem%27s%20existence%3F",
+            "correct_answer": "Ley%20Batenkaitos",
+            "incorrect_answers": [
+                "Roy%20Alphard",
+                "Petelgeuse%20Romanee-Conti",
+                "Louis%20Arneb"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Film",
+            "type": "boolean",
+            "difficulty": "medium",
+            "question": "The%20movie%20%22Tron%22%20received%20an%20Oscar%20nomination%20for%20Best%20Visual%20Effects.",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ]
+        }
+    ]
+}
