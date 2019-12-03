@@ -28,7 +28,14 @@ class IntroUnitTestingLabTests: XCTestCase {
         XCTAssertNotNil(data)
     }
     
-    
+    func testStarWarsData(){
+        let filename = "starWars"
+        let ext = "json"
+        
+        let data = Bundle.readRawData(filename: filename, ext: ext)
+        
+        XCTAssertNotNil(data)
+    }
     
     
 

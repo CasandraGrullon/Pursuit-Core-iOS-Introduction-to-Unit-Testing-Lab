@@ -19,12 +19,21 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="jokeCell" id="GOd-RN-23m">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="jokeCell" textLabel="0wt-YG-Cob" style="IBUITableViewCellStyleDefault" id="GOd-RN-23m">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GOd-RN-23m" id="ZaV-Vj-sAS">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0wt-YG-Cob">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="weM-Fj-5VY" kind="show" id="Phx-2G-TSd"/>
@@ -43,6 +52,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="FrT-3Q-qIp"/>
+                    <connections>
+                        <outlet property="tableView" destination="5Px-Bt-84u" id="bbY-Yu-mHD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,20 +67,37 @@
                     <view key="view" contentMode="scaleToFill" id="RN3-ym-tNX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs2-vt-AhT">
+                                <rect key="frame" x="0.0" y="438" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zs2-vt-AhT" firstAttribute="leading" secondItem="0Hi-dY-lE5" secondAttribute="leading" id="KhK-7K-V8i"/>
+                            <constraint firstItem="zs2-vt-AhT" firstAttribute="centerX" secondItem="RN3-ym-tNX" secondAttribute="centerX" id="bWX-oc-6LA"/>
+                            <constraint firstItem="0Hi-dY-lE5" firstAttribute="trailing" secondItem="zs2-vt-AhT" secondAttribute="trailing" id="loj-Hc-qoi"/>
+                            <constraint firstItem="zs2-vt-AhT" firstAttribute="centerY" secondItem="RN3-ym-tNX" secondAttribute="centerY" id="r7S-Af-rWo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0Hi-dY-lE5"/>
                     </view>
                     <navigationItem key="navigationItem" id="540-zz-QZA"/>
+                    <connections>
+                        <outlet property="punchlineLabel" destination="zs2-vt-AhT" id="UHS-9d-xcw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="09I-6m-Ope" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2716" y="117"/>
         </scene>
-        <!--Item-->
+        <!--Jokes-->
         <scene sceneID="Y2m-Ol-oyz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hmr-TK-K2B" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="7pf-Ia-7oO"/>
+                    <tabBarItem key="tabBarItem" title="Jokes" image="hand.thumbsup.fill" catalog="system" id="7pf-Ia-7oO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wfa-Iz-HxY">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -95,12 +124,28 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="starWarsCell" id="M0c-C9-Hr2">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="starWarsCell" textLabel="0PI-MG-Xfh" detailTextLabel="hL6-S4-QwS" style="IBUITableViewCellStyleSubtitle" id="M0c-C9-Hr2">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M0c-C9-Hr2" id="qf3-TV-6NE">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0PI-MG-Xfh">
+                                                    <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hL6-S4-QwS">
+                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="z3B-C6-DHW" kind="show" id="7ia-z4-Ezs"/>
@@ -119,6 +164,9 @@
                         <viewLayoutGuide key="safeArea" id="UJN-Ly-Qqh"/>
                     </view>
                     <navigationItem key="navigationItem" id="V1U-oM-tS9"/>
+                    <connections>
+                        <outlet property="tableView" destination="kl4-gd-ygw" id="BVL-1w-q1K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8x-EO-dkH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,14 +179,33 @@
                     <view key="view" contentMode="scaleToFill" id="FFi-0K-8bY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IUM-0x-Ml5">
+                                <rect key="frame" x="8" y="96" width="398" height="709"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="c6H-Wc-aB3" firstAttribute="bottom" secondItem="IUM-0x-Ml5" secondAttribute="bottom" constant="8" id="JDB-G8-cZp"/>
+                            <constraint firstItem="c6H-Wc-aB3" firstAttribute="trailing" secondItem="IUM-0x-Ml5" secondAttribute="trailing" constant="8" id="PwA-cc-Bfp"/>
+                            <constraint firstItem="IUM-0x-Ml5" firstAttribute="top" secondItem="c6H-Wc-aB3" secondAttribute="top" constant="8" id="v8h-dJ-fPk"/>
+                            <constraint firstItem="IUM-0x-Ml5" firstAttribute="leading" secondItem="c6H-Wc-aB3" secondAttribute="leading" constant="8" id="vYX-ea-9ST"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="c6H-Wc-aB3"/>
                     </view>
                     <navigationItem key="navigationItem" id="QL0-b2-tcc"/>
+                    <connections>
+                        <outlet property="textView" destination="IUM-0x-Ml5" id="Ype-fb-brY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjT-Sg-wRu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2716" y="777"/>
+            <point key="canvasLocation" x="2715.9420289855075" y="776.78571428571422"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="J0J-8q-8pL">
@@ -146,6 +213,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HRX-yw-ezY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lbY-Db-3bq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -159,11 +227,11 @@
             </objects>
             <point key="canvasLocation" x="-1696" y="904"/>
         </scene>
-        <!--Item-->
+        <!--Star Wars-->
         <scene sceneID="OWN-Z2-Vsb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ayo-C6-0Zf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="KeV-Eo-fW5"/>
+                    <tabBarItem key="tabBarItem" title="Star Wars" image="moon.stars.fill" catalog="system" id="KeV-Eo-fW5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BtU-Dh-Qxt">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -235,11 +303,11 @@
             </objects>
             <point key="canvasLocation" x="2716" y="1448"/>
         </scene>
-        <!--Item-->
+        <!--Trivia-->
         <scene sceneID="zBk-ip-sMO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="trK-n0-6MI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="eC3-1B-4tk"/>
+                    <tabBarItem key="tabBarItem" title="Trivia" image="questionmark" catalog="system" id="eC3-1B-4tk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MjD-pv-r8Z">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -255,4 +323,9 @@
             <point key="canvasLocation" x="1021.7391304347827" y="1447.7678571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hand.thumbsup.fill" catalog="system" width="64" height="62"/>
+        <image name="moon.stars.fill" catalog="system" width="64" height="62"/>
+        <image name="questionmark" catalog="system" width="48" height="64"/>
+    </resources>
 </document>

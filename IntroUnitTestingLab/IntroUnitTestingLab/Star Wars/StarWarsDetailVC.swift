@@ -10,10 +10,19 @@ import UIKit
 
 class StarWarsDetailVC: UIViewController {
 
+    
+    @IBOutlet weak var textView: UITextView!
+    
+    var starwarsMovie: StarWarsInfo!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateUI()
+        navigationItem.title = starwarsMovie.title
     }
 
+    func updateUI() {
+        textView.text = starwarsMovie.openingCrawl
+    }
 
 }

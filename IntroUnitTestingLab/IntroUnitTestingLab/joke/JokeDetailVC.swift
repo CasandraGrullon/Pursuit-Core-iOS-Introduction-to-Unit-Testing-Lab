@@ -10,10 +10,18 @@ import UIKit
 
 class JokeDetailVC: UIViewController {
 
+    @IBOutlet weak var punchlineLabel: UILabel!
+    
+    var joke: OfficialJoke?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUI()
 
     }
-    
+    func updateUI(){
+        punchlineLabel.text = joke?.punchline ?? ""
+        navigationItem.title = joke?.setup ?? ""
+    }
 
 }
