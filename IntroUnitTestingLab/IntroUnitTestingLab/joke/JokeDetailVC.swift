@@ -10,6 +10,7 @@ import UIKit
 
 class JokeDetailVC: UIViewController {
 
+    @IBOutlet weak var setupLabel: UILabel!
     @IBOutlet weak var punchlineLabel: UILabel!
     
     var joke: OfficialJoke?
@@ -21,7 +22,7 @@ class JokeDetailVC: UIViewController {
     }
     func updateUI(){
         punchlineLabel.text = joke?.punchline ?? ""
-        navigationItem.title = joke?.setup ?? ""
+        setupLabel.text = joke?.setup ?? ""
     }
 
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C64CD9882395E329002082C5 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64CD9872395E329002082C5 /* Bundle+Extensions.swift */; };
+		C64CD98A2395F716002082C5 /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64CD9892395F716002082C5 /* Trivia.swift */; };
 		C6FE68CE2395B36700A8C601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FE68CD2395B36700A8C601 /* AppDelegate.swift */; };
 		C6FE68D02395B36700A8C601 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FE68CF2395B36700A8C601 /* SceneDelegate.swift */; };
 		C6FE68D22395B36700A8C601 /* JokeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FE68D12395B36700A8C601 /* JokeVC.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		C64CD9872395E329002082C5 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		C64CD9892395F716002082C5 /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
 		C6FE68CA2395B36700A8C601 /* IntroUnitTestingLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntroUnitTestingLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FE68CD2395B36700A8C601 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6FE68CF2395B36700A8C601 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				C6FE68F52395B43200A8C601 /* trivia.json */,
+				C64CD9892395F716002082C5 /* Trivia.swift */,
 				C6FE68F92395B59900A8C601 /* TriviaVC.swift */,
 				C6FE69022395B8B400A8C601 /* TriviaDetailVC.swift */,
 			);
@@ -270,6 +273,7 @@
 				C6FE68D02395B36700A8C601 /* SceneDelegate.swift in Sources */,
 				C6FE68FD2395B7BA00A8C601 /* JokeDetailVC.swift in Sources */,
 				C6FE68F82395B55A00A8C601 /* StarWarsVC.swift in Sources */,
+				C64CD98A2395F716002082C5 /* Trivia.swift in Sources */,
 				C6FE69002395B84D00A8C601 /* StarWarsDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
